@@ -992,7 +992,18 @@ h3 {
 
   .menu-board-inner {
     min-height: auto;
-    overflow: hidden;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .menu-panels {
+    min-height: auto;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .menu-tab-list {
+    max-width: 100%;
   }
 
   .menu-board::before,
@@ -1000,10 +1011,6 @@ h3 {
   .menu-board-inner::before,
   .menu-board-inner::after {
     display: none;
-  }
-
-  .menu-panels {
-    min-height: auto;
   }
 
   .reservation-actions {
