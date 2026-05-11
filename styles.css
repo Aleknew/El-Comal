@@ -18,11 +18,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
+  width: 100%;
   color: var(--cream);
   font-family: "Lato", Arial, sans-serif;
   background:
@@ -938,7 +941,6 @@ h3 {
   }
 
   .split-section,
-  .menu-section,
   .contact-section,
   .reservation-band,
   .site-footer {
@@ -980,30 +982,55 @@ h3 {
   }
 
   .menu-section {
-    overflow: hidden;
+    display: block;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
   }
 
   .menu-board {
     width: 100%;
-    justify-self: stretch;
     max-width: 100%;
-    overflow: hidden;
+    justify-self: stretch;
+    padding: 0;
+    border: 1px solid rgba(212, 175, 55, 0.38);
+    border-left: 0;
+    border-right: 0;
+    margin: 0;
+    box-shadow: none;
   }
 
   .menu-board-inner {
     min-height: auto;
-    overflow-x: hidden;
-    max-width: 100%;
+    padding: 20px 14px;
+    border: 0;
   }
 
-  .menu-panels {
-    min-height: auto;
-    overflow-x: hidden;
+  .menu-board,
+  .menu-board-inner,
+  .menu-panels,
+  .menu-panel,
+  .menu-items,
+  .menu-items li,
+  .menu-items li > * {
     max-width: 100%;
+    overflow: hidden;
+    overflow-wrap: break-word;
   }
 
-  .menu-tab-list {
-    max-width: 100%;
+  .menu-items li {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .menu-items li > div {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .menu-items em {
+    white-space: nowrap;
+    text-align: right;
   }
 
   .menu-board::before,
@@ -1011,6 +1038,36 @@ h3 {
   .menu-board-inner::before,
   .menu-board-inner::after {
     display: none;
+  }
+
+  .menu-panels {
+    min-height: auto;
+  }
+
+  .menu-items {
+    max-height: none;
+    padding-right: 0;
+  }
+
+  .menu-items span {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .menu-logo {
+    font-size: 38px;
+  }
+
+  .menu-panel h3 {
+    font-size: 28px;
+  }
+
+  .menu-items strong {
+    font-size: 14px;
+  }
+
+  .menu-copy {
+    padding: clamp(58px, 8vw, 116px) clamp(20px, 7vw, 96px) 0;
   }
 
   .reservation-actions {
@@ -1036,29 +1093,8 @@ h3 {
     padding-bottom: 52px;
   }
 
-  .menu-board {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    justify-self: stretch;
-    overflow: hidden;
-  }
-
-  .menu-board::before,
-  .menu-board::after,
-  .menu-board-inner::before,
-  .menu-board-inner::after {
-    display: none;
-  }
-
   .menu-board-inner {
-    min-height: auto;
     padding: 20px 14px;
-    overflow-x: hidden;
-  }
-
-  .menu-items {
-    max-height: none;
   }
 
   .menu-items li {
@@ -1089,12 +1125,15 @@ h3 {
 
   .intro-band,
   .split-section,
-  .menu-section,
   .signature-section,
   .dish-gallery,
   .reviews-section,
   .contact-section,
   .reservation-band {
+    padding-inline: 18px;
+  }
+
+  .menu-copy {
     padding-inline: 18px;
   }
 
