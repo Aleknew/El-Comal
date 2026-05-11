@@ -978,6 +978,24 @@ h3 {
     aspect-ratio: 1;
   }
 
+  .menu-board {
+    width: 100%;
+    justify-self: stretch;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .menu-board-inner {
+    overflow: hidden;
+  }
+
+  .menu-board::before,
+  .menu-board::after,
+  .menu-board-inner::before,
+  .menu-board-inner::after {
+    display: none;
+  }
+
   .reservation-actions {
     width: 100%;
   }
@@ -1004,15 +1022,36 @@ h3 {
   .menu-board {
     width: 100%;
     min-width: 0;
+    max-width: 100%;
+    justify-self: stretch;
+    overflow: hidden;
+  }
+
+  .menu-board::before,
+  .menu-board::after,
+  .menu-board-inner::before,
+  .menu-board-inner::after {
+    display: none;
   }
 
   .menu-board-inner {
     min-height: auto;
     padding: 20px 14px;
+    overflow-x: hidden;
   }
 
   .menu-items {
     max-height: none;
+  }
+
+  .menu-items li {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .menu-items span {
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .menu-panel h3 {
