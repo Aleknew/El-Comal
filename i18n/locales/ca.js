@@ -40,6 +40,75 @@
         nortenos: "Els del nord",
         olla: "Olla i salsa",
       },
+      groups: [
+        {
+          id: "boca",
+          title: "Per començar",
+          items: [
+            ["Guacamole Patrio", "Alvocat, tomàquet, coriandre, ceba, sal i llima", "10,50 €"],
+            ["Guacamole del Comal", "Alvocat, ceba, coriandre, xixarró, xips de plàtan mascle i xili serrano torrat", "12,50 €"],
+            ["Totopos mixtecos", "Blat de moro fregit, formatge cheddar, mongetes, tomàquet, ceba, carn a la brasa, coriandre i formatge fresc", "14,50 €"],
+            ["Totopos de la Milpa", "Blat de moro fregit, formatge cheddar, mongetes, tomàquet, ceba, coriandre, formatge fresc i guacamole", "13,50 €"],
+            ["Tetela de Flor de Carbassa", "Tortilla de blat de moro farcida de quesillo i flor de carbassa, salsa de tomàquet torrat, crema i formatge fresc", "10,50 €"],
+            ["Surtit de la tia Judit", "Taco cruixent de pollastre, quesadilla de carn picada i salbute yucatec", "15,50 €"],
+            ["Surtit de l'àvia", "Picadita de cansalada, gordita de chamorro i sincronitzada de carn a la brasa", "17,50 €"],
+          ],
+        },
+        {
+          id: "costa",
+          title: "De la costa",
+          items: [
+            ["Torna a la vida", "Barreja de marisc, tomàquet, ceba, coriandre, alvocat i salsa secreta", "20,50 €"],
+            ["Ceviche campechano", "Coriandre, ceba, tomàquet, Clamato i barreja de marisc", "18,50 €"],
+            ["Tostada tropical", "Tortilla cruixent de blat de moro, alvocat, gambeta, tonyina, ceba, tomàquet, mango, coriandre i llima", "15,50 €"],
+          ],
+        },
+        {
+          id: "huerto",
+          title: "De l'hort",
+          items: [
+            ["Amanida Colibrí", "Mezclum, fruita de temporada, vinagreta de tamarinde i tajín", "13,50 €"],
+            ["Amanida Cèsar", "Enciam, anxoves o pollastre, parmesà, pa fregit i salsa Cèsar", "12,50 €"],
+            ["Amanida mestissa", "Mezclum, fruita de temporada, formatge de cabra, pernil serrà, nous caramel·litzades, tomàquet cherry i formatge en salsa", "14,50 €"],
+            ["Amanida de truita curada al tequila", "Peix, tequila, alvocat, enciam, tomàquet cherry i salsa ranch de serranito", "15,50 €"],
+          ],
+        },
+        {
+          id: "comal",
+          title: "Del comal a la taula",
+          items: [
+            ["Tacos Pastor (3u)", "Tortilles de blat de moro, porc macerat amb pinya, cocció a la brasa, ceba, coriandre i rave", "12,50 €"],
+            ["Tacos de secreto (3u)", "Tortilles de blat de moro, porc a la brasa, ceba, coriandre i rave", "12,50 €"],
+            ["Tacos d'arrachera (3u)", "Tortilles de blat de moro, vedella a la brasa, ceba, coriandre i rave", "13,50 €"],
+            ["Tacos de costella de porc (3u)", "Tortilles de blat de moro, porc desfet de la cassola, ceba, coriandre i rave", "10,50 €"],
+            ["Tacos de pollastre a la mexicana (3u)", "Tortilla de blat de moro, pollastre desfet amb espècies, ceba, coriandre i rave", "10,50 €"],
+            ["Tacos de Tinga poblana (3u)", "Pollastre, porc, xoriço, ceba juliana, tomàquet vermell, tomatillo verd i xili chipotle", "11,50 €"],
+            ["Tacos de barbacoa de vedella (3u)", "Vedella desfeta cuita al vapor, ceba, coriandre i rave", "13,50 €"],
+          ],
+        },
+        {
+          id: "nortenos",
+          title: "Els del nord",
+          items: [
+            ["Burrito Chihuahua", "Tortilla de blat, mongetes, formatge, tomàquet, ceba, coriandre, guacamole, vedella a la brasa i chimichurri mexicà", "15,50 €"],
+            ["Burrito Durango", "Tortilla de blat, guacamole, formatges, enciam, pollastre brasejat, pesto de coriandre i pistatxo", "14,50 €"],
+            ["Burrito Baixa Califòrnia", "Tortilla de blat, tonyina o gambeta, mongetes, formatge, pebrots i tomàquet cherry", "15,50 €"],
+          ],
+        },
+        {
+          id: "olla",
+          title: "De la nostra olla i salsa",
+          items: [
+            ["Enchiladas verdes amb tasajo (3u)", "Tortilles de blat de moro, tomatillo verd, formatge, ceba, crema agra, alvocat, coriandre i bistec de vedella", "15,50 €"],
+            ["Enmolades farcides de pollastre (3u)", "Tortilles de blat de moro, pollastre desfet, salsa de xilis i fruits secs, ceba, alvocat i coriandre", "14,50 €"],
+            ["Entomatades amb ou ferrat (3u)", "Tortilles de blat de moro, tomàquet, ceba, alvocat, coriandre i ou", "15,50 €"],
+            ["Cochinita pibil amb arròs", "Porc desfet en achiote, fulla de plàtan, taronja, ceba macerada en habanero i arròs blanc", "15,50 €"],
+            ["Pipián verd de pistatxo", "Tomatillo verd, herbes aromàtiques i pistatxo, porc i arròs blanc", "18,50 €"],
+            ["Mole negre oaxaqueny", "Pasta de xilis, llavors, fruits secs i fruita, arròs blanc i pollastre", "17,50 €"],
+            ["Chamorro cantiner", "Codillo brasejat, varietat de xilis en salsa i tomàquet, amb verdures", "16,50 €"],
+          ],
+        },
+      ],
     },
     flavors: {
       kicker: "03 / Sabors",
