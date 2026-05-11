@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   color: var(--cream);
   font-family: "Lato", Arial, sans-serif;
   background:
@@ -978,6 +979,10 @@ h3 {
     aspect-ratio: 1;
   }
 
+  .menu-section {
+    overflow: hidden;
+  }
+
   .menu-board {
     width: 100%;
     justify-self: stretch;
@@ -986,6 +991,7 @@ h3 {
   }
 
   .menu-board-inner {
+    min-height: auto;
     overflow: hidden;
   }
 
@@ -994,6 +1000,10 @@ h3 {
   .menu-board-inner::before,
   .menu-board-inner::after {
     display: none;
+  }
+
+  .menu-panels {
+    min-height: auto;
   }
 
   .reservation-actions {
