@@ -25,6 +25,7 @@
     intro: {
       mark: "Auténtico. Elegante. Cálido. Arraigado.",
       copy: "El Comal honra la cocina oaxaqueña con ingredientes honestos, técnica ancestral y una hospitalidad cercana que convierte cada visita en un pequeño ritual.",
+      heading: "Oaxaca en cada detalle. Tortilla artesana, alma mexicana, manos expertas. Prueba lo hecho por quién mejor conoce el sabor de su tierra.",
     },
     space: {
       kicker: "Espacio",

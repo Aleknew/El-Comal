@@ -17,6 +17,7 @@
     intro: {
       mark: "Authentique. Élégant. Chaleureux. Enraciné.",
       copy: "El Comal célèbre la cuisine oaxaquénienne avec des ingrédients sincères, une technique ancestrale et une hospitalité proche qui transforme chaque visite en petit rituel.",
+      heading: "Oaxaca dans chaque détail. Tortilla artisanale, âme mexicaine, mains expertes. Goûtez ce qui est fait par ceux qui connaissent le mieux la saveur de leur terre.",
     },
     space: {
       kicker: "Lieu",
