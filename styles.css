@@ -306,14 +306,33 @@ h3 {
 }
 
 .split-section {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.78fr);
   gap: clamp(32px, 6vw, 92px);
   align-items: center;
   padding: clamp(58px, 8vw, 116px) clamp(20px, 7vw, 96px);
+  background:
+    url('assets/facade.png') center / cover no-repeat;
+}
+
+.split-section::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    rgba(20, 22, 24, 0.92) 0%,
+    rgba(20, 22, 24, 0.58) 50%,
+    rgba(20, 22, 24, 0.32) 100%
+  );
+  pointer-events: none;
 }
 
 .section-copy {
+  position: relative;
+  z-index: 1;
   max-width: 710px;
 }
 
@@ -358,6 +377,7 @@ h3 {
 
 .image-panel {
   position: relative;
+  z-index: 1;
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--line);
