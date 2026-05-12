@@ -19,7 +19,7 @@
       copy: "El Comal honra la cuina oaxaquenya amb ingredients honestos, tècnica ancestral i una hospitalitat propera que converteix cada visita en un petit ritual.",
     },
     space: {
-      kicker: "01 / Espai",
+      kicker: "Espai",
       title: "Un pati encès per llum, fang i sobretaula.",
       copy: "L'experiència combina murs amb memòria, taules senzilles, vegetació i llum ambre. L'interior manté una sensació artesanal sense perdre el pols refinat de la marca.",
       details: {
@@ -29,7 +29,7 @@
       },
     },
     menu: {
-      kicker: "02 / Menú",
+      kicker: "Menú",
       categories: "Categories",
       availability: "Consultar disponibilitat",
       groupTitles: {
@@ -111,7 +111,7 @@
       ],
     },
     flavors: {
-      kicker: "03 / Sabors",
+      kicker: "Sabors",
       title: "Herència servida amb calma.",
       copy: "Mole, blat de moro, salses, herbes fresques i postres de casa apareixen en una cuina de profunditat, no d'artifici.",
       cards: {
@@ -121,12 +121,12 @@
       },
     },
     gallery: {
-      kicker: "04 / Plats",
+      kicker: "Plats",
       title: "Color, blat de moro i foc a taula.",
       copy: "Una galeria pensada per créixer amb fotografies reals de la cuina: primers plans càlids, fons sobris i plats que deixin parlar el producte.",
     },
     reviews: {
-      kicker: "05 / Google",
+      kicker: "Opinions",
       title: "El que es recorda després de la taula.",
       googleLink: "Veure a Google",
       cards: {
@@ -137,7 +137,7 @@
     },
     reservations: { kicker: "Reserves", title: "Una taula, una llum, una nit oaxaquenya.", call: "Trucar ara", write: "Escriure" },
     contact: {
-      kicker: "06 / Contacte",
+      kicker: "Contacte",
       title: "Troba'ns al centre de Calella.",
       addressLabel: "Adreça",
       phoneLabel: "Telèfon",

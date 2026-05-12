@@ -19,7 +19,7 @@
       copy: "El Comal honors Oaxacan cuisine through honest ingredients, ancestral technique and close hospitality that turns each visit into a small ritual.",
     },
     space: {
-      kicker: "01 / Space",
+      kicker: "Space",
       title: "A patio lit by warm light, clay and lingering conversation.",
       copy: "The experience brings together walls with memory, simple tables, greenery and amber light. The interior keeps an artisanal feeling without losing the brand's refined pulse.",
       details: {
@@ -29,7 +29,7 @@
       },
     },
     menu: {
-      kicker: "02 / Menu",
+      kicker: "Menu",
       categories: "Categories",
       availability: "Check availability",
       groupTitles: {
@@ -111,7 +111,7 @@
       ],
     },
     flavors: {
-      kicker: "03 / Flavors",
+      kicker: "Flavors",
       title: "Heritage served slowly.",
       copy: "Mole, corn, sauces, fresh herbs and house desserts appear in a cuisine of depth, not artifice.",
       cards: {
@@ -121,12 +121,12 @@
       },
     },
     gallery: {
-      kicker: "04 / Dishes",
+      kicker: "Dishes",
       title: "Color, corn and fire on the table.",
       copy: "A gallery designed to grow with real kitchen photography: warm close-ups, quiet backgrounds and dishes that let the product speak.",
     },
     reviews: {
-      kicker: "05 / Google",
+      kicker: "Reviews",
       title: "What stays with you after the meal.",
       googleLink: "View on Google",
       cards: {
@@ -137,7 +137,7 @@
     },
     reservations: { kicker: "Reservations", title: "A table, a light, an Oaxacan night.", call: "Call now", write: "Write" },
     contact: {
-      kicker: "06 / Contact",
+      kicker: "Contact",
       title: "Find us in the center of Calella.",
       addressLabel: "Address",
       phoneLabel: "Phone",

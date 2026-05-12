@@ -655,23 +655,41 @@ h3 {
     rgba(24, 27, 31, 0.42);
 }
 
-.gallery-heading,
-.reviews-heading {
+.gallery-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.46fr);
-  gap: clamp(24px, 5vw, 70px);
-  align-items: end;
-  margin-bottom: 34px;
+  grid-template-columns: minmax(0, 0.55fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 70px);
+  align-items: start;
 }
 
-.gallery-heading h2,
-.reviews-heading h2 {
+.gallery-heading {
+  display: block;
+}
+
+.gallery-heading h2 {
   margin-bottom: 0;
 }
 
 .gallery-heading p:not(.section-number) {
   color: rgba(247, 243, 233, 0.76);
   font-size: 18px;
+}
+
+.reviews-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: clamp(24px, 5vw, 70px);
+  align-items: end;
+  margin-bottom: 34px;
+}
+
+.reviews-heading-text {
+  flex: 1 1 auto;
+}
+
+.reviews-heading-text h2 {
+  margin-bottom: 0;
 }
 
 .insta-frame {
@@ -721,7 +739,7 @@ h3 {
 
 .photo-reel {
   display: grid;
-  grid-auto-columns: clamp(260px, 32vw, 430px);
+  grid-auto-columns: clamp(180px, 22vw, 280px);
   grid-auto-flow: column;
   gap: 12px;
   overflow-x: auto;
@@ -738,7 +756,7 @@ h3 {
 
 .dish-card {
   position: relative;
-  aspect-ratio: 1;
+  aspect-ratio: 3/4;
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(212, 175, 55, 0.24);
@@ -795,8 +813,9 @@ h3 {
 }
 
 .reviews-heading .text-link {
-  justify-self: end;
+  flex: 0 0 auto;
   margin-top: 0;
+  align-self: end;
 }
 
 .reviews-grid {
@@ -967,7 +986,7 @@ h3 {
   .split-section,
   .menu-section,
   .signature-header,
-  .gallery-heading,
+  .gallery-layout,
   .reviews-heading,
   .reservation-band,
   .contact-section,

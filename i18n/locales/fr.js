@@ -19,7 +19,7 @@
       copy: "El Comal célèbre la cuisine oaxaquénienne avec des ingrédients sincères, une technique ancestrale et une hospitalité proche qui transforme chaque visite en petit rituel.",
     },
     space: {
-      kicker: "01 / Lieu",
+      kicker: "Lieu",
       title: "Un patio éclairé par la lumière, l'argile et la conversation.",
       copy: "L'expérience réunit des murs chargés de mémoire, des tables simples, de la végétation et une lumière ambrée. L'intérieur garde une sensation artisanale sans perdre l'élégance de la marque.",
       details: {
@@ -29,7 +29,7 @@
       },
     },
     menu: {
-      kicker: "02 / Menu",
+      kicker: "Menu",
       categories: "Catégories",
       availability: "Vérifier la disponibilité",
       groupTitles: {
@@ -111,7 +111,7 @@
       ],
     },
     flavors: {
-      kicker: "03 / Saveurs",
+      kicker: "Saveurs",
       title: "Un héritage servi avec calme.",
       copy: "Mole, maïs, sauces, herbes fraîches et desserts maison composent une cuisine de profondeur, sans artifice.",
       cards: {
@@ -121,12 +121,12 @@
       },
     },
     gallery: {
-      kicker: "04 / Plats",
+      kicker: "Plats",
       title: "Couleur, maïs et feu à table.",
       copy: "Une galerie pensée pour grandir avec de vraies photos de cuisine : gros plans chaleureux, fonds sobres et plats qui laissent parler le produit.",
     },
     reviews: {
-      kicker: "05 / Google",
+      kicker: "Avis",
       title: "Ce qui reste après le repas.",
       googleLink: "Voir sur Google",
       cards: {
@@ -137,7 +137,7 @@
     },
     reservations: { kicker: "Réservations", title: "Une table, une lumière, une nuit oaxaquénienne.", call: "Appeler", write: "Écrire" },
     contact: {
-      kicker: "06 / Contact",
+      kicker: "Contact",
       title: "Retrouvez-nous au centre de Calella.",
       addressLabel: "Adresse",
       phoneLabel: "Téléphone",
