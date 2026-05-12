@@ -2,13 +2,13 @@
   --ink: #181b1f;
   --charcoal: #202429;
   --slate: #2b2e35;
-  --gold: #d4af37;
-  --gold-soft: #e2c46d;
-  --cream: #f7f3e9;
-  --terracotta: #a24e3a;
-  --olive: #5c6b4a;
-  --gray: #6b6b68;
-  --line: rgba(212, 175, 55, 0.34);
+  --gold: #e5b927;
+  --gold-soft: #f4d068;
+  --cream: #fff9ed;
+  --terracotta: #bc553d;
+  --olive: #6f8259;
+  --gray: #80807b;
+  --line: rgba(229, 185, 39, 0.34);
   --shadow: rgba(0, 0, 0, 0.42);
 }
 
@@ -138,6 +138,42 @@ img {
   background: linear-gradient(135deg, var(--gold-soft), var(--gold));
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--cream);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -168,6 +204,23 @@ img {
   z-index: 1;
   margin-right: calc(clamp(20px, 7vw, 96px) * -1);
   filter: drop-shadow(-12px 20px 40px rgba(0, 0, 0, 0.7));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero-content {
@@ -262,10 +315,18 @@ h3 {
   background: linear-gradient(135deg, var(--gold-soft), var(--gold));
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.26);
 }
+.button-primary:hover {
+  background: linear-gradient(135deg, #fff099, var(--gold-soft));
+  box-shadow: 0 20px 50px rgba(229, 185, 39, 0.4);
+}
 
 .button-secondary {
   color: var(--cream);
   background: rgba(24, 27, 31, 0.38);
+}
+.button-secondary:hover {
+  background: rgba(40, 44, 50, 0.6);
+  border-color: var(--gold-soft);
 }
 
 .intro-band,
@@ -386,6 +447,11 @@ h3 {
   min-height: 118px;
   padding: 18px;
   background: rgba(24, 27, 31, 0.76);
+  transition: background 300ms ease;
+}
+
+.detail-grid div:hover {
+  background: rgba(30, 34, 40, 0.86);
 }
 
 .detail-grid span,
@@ -678,6 +744,15 @@ h3 {
   background:
     linear-gradient(145deg, rgba(43, 46, 53, 0.92), rgba(24, 27, 31, 0.94)),
     var(--charcoal);
+  transition: transform 300ms ease, background 300ms ease;
+}
+
+.signature-grid article:hover {
+  transform: translateY(-4px);
+  background:
+    linear-gradient(145deg, rgba(50, 54, 62, 0.95), rgba(24, 27, 31, 0.98)),
+    var(--charcoal);
+  z-index: 1;
 }
 
 .dish-gallery {
@@ -831,10 +906,13 @@ h3 {
   background: rgba(247, 243, 233, 0.28);
 }
 
-.reel-hint span:first-child {
+.reel-hint span.is-active {
   width: 20px;
   border-radius: 999px;
   background: var(--gold-soft);
+}
+.reel-hint span {
+  transition: width 0.3s ease, background 0.3s ease;
 }
 
 .reviews-section {
@@ -864,6 +942,13 @@ h3 {
   background:
     linear-gradient(145deg, rgba(43, 46, 53, 0.86), rgba(24, 27, 31, 0.96)),
     var(--charcoal);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .review-stars {
@@ -992,8 +1077,35 @@ h3 {
     min-height: 76px;
   }
 
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
   .nav-links {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 27, 31, 0.98);
+    backdrop-filter: blur(18px);
+    padding: 32px 20px;
+    gap: 32px;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    border-bottom: 1px solid rgba(247, 243, 233, 0.1);
+  }
+
+  .nav-links.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links a {
+    font-size: 16px;
   }
 
   .hero {
@@ -1188,15 +1300,6 @@ h3 {
   .hero-photo {
     width: 100%;
     align-self: center;
-  }
-
-  .menu-board-inner {
-    padding: 20px 14px;
-  }
-
-  .menu-items li {
-    grid-template-columns: 1fr;
-    gap: 4px;
   }
 
   .menu-items span {

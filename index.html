@@ -31,7 +31,14 @@
         <a href="#contacto" data-i18n="nav.contact">Contacto</a>
         <a href="#reservas" data-i18n="nav.reservations">Reservas</a>
       </nav>
-      <div class="language-switcher" data-language-switcher aria-label="Language selector"></div>
+      <div class="header-actions">
+        <div class="language-switcher" data-language-switcher aria-label="Language selector"></div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main>
@@ -50,25 +57,25 @@
         <img class="hero-photo" src="assets/nachos_transparent.png" alt="Nachos - firma de la cocina oaxaquena" />
       </section>
 
-      <section class="intro-band" aria-label="Brand promise">
+      <section class="intro-band fade-in-up" aria-label="Brand promise">
         <h2 class="intro-band-heading" data-i18n="intro.heading">Oaxaca en cada detalle. Tortilla artesana, alma mexicana, manos expertas. Prueba lo hecho por quién mejor conoce el sabor de su tierra.</h2>
         <div class="intro-mark">
           <div class="intro-dish">
-            <img src="assets/dish1.png" alt="Chilaquiles verdes con carne asada" />
+            <img src="assets/dish1.png" alt="Chilaquiles verdes con carne asada" loading="lazy" />
             <p class="intro-dish-label">Chilaquiles verdes con carne asada.</p>
           </div>
           <div class="intro-dish">
-            <img src="assets/dish2.png" alt="Chilaquiles con mole negro" />
+            <img src="assets/dish2.png" alt="Chilaquiles con mole negro" loading="lazy" />
             <p class="intro-dish-label">Chilaquiles con mole negro</p>
           </div>
           <div class="intro-dish">
-            <img src="assets/dish3.png" alt="Enchiladas y tostada de tinga" />
+            <img src="assets/dish3.png" alt="Enchiladas y tostada de tinga" loading="lazy" />
             <p class="intro-dish-label">Enchiladas y tostada de tinga</p>
           </div>
         </div>
       </section>
 
-      <section class="split-section" id="espacio">
+      <section class="split-section fade-in-up" id="espacio">
         <div class="section-copy">
           <p class="section-number" data-i18n="space.kicker">Espacio</p>
           <h2 data-i18n="space.title">Un patio encendido por luz, barro y sobremesa.</h2>
@@ -78,11 +85,11 @@
           </p>
         </div>
         <figure class="image-panel">
-          <img src="assets/interior.png" alt="Patio interior de El Comal con mesas, arboles y luz calida" />
+          <img src="assets/interior.png" alt="Patio interior de El Comal con mesas, arboles y luz calida" loading="lazy" />
         </figure>
       </section>
 
-      <section class="menu-section" id="menu">
+      <section class="menu-section fade-in-up" id="menu">
         <div class="menu-copy menu-tabs">
           <p class="section-number" data-i18n="menu.kicker">Menu</p>
           <h2 data-i18n="menu.categories">Categorias</h2>
@@ -97,7 +104,7 @@
         </div>
       </section>
 
-      <section class="signature-section" aria-label="Signature dishes">
+      <section class="signature-section fade-in-up" aria-label="Signature dishes">
         <p class="section-number" data-i18n="flavors.kicker">Sabores</p>
         <div class="signature-header">
           <h2 data-i18n="flavors.title">Herencia servida con calma.</h2>
@@ -125,7 +132,7 @@
         </div>
       </section>
 
-      <section class="dish-gallery" id="platos">
+      <section class="dish-gallery fade-in-up" id="platos">
         <div class="gallery-layout">
           <div class="gallery-heading">
             <p class="section-number" data-i18n="gallery.kicker">Platos</p>
@@ -143,58 +150,64 @@
               <span>Calella, Spain</span>
             </div>
           </div>
-          <div class="photo-reel">
+          <div class="photo-reel" id="photoReel">
             <figure class="dish-card">
-              <img src="assets/2026-05-03.jpg" alt="Plato real de El Comal con salsa y guarnicion" />
+              <img src="assets/2026-05-03.jpg" alt="Plato real de El Comal con salsa y guarnicion" loading="lazy" />
             </figure>
             <figure class="dish-card">
-              <img src="assets/2026-04-01-2.jpg" alt="Plato vertical de cocina oaxaquena de El Comal" />
+              <img src="assets/2026-04-01-2.jpg" alt="Plato vertical de cocina oaxaquena de El Comal" loading="lazy" />
             </figure>
             <figure class="dish-card">
-              <img src="assets/2026-05-03-2.jpg" alt="Plato real de El Comal servido en mesa" />
+              <img src="assets/2026-05-03-2.jpg" alt="Plato real de El Comal servido en mesa" loading="lazy" />
             </figure>
             <figure class="dish-card">
               <img
                 src="assets/656908689_17942645496172088_3193131407356969383_n.heic.jpeg"
                 alt="Fotografia real de plato de El Comal"
+                loading="lazy"
               />
             </figure>
             <figure class="dish-card">
               <img
                 src="assets/656253276_17942187426172088_4406147382857833413_n.heic.jpeg"
                 alt="Plato de El Comal con presentacion vertical"
+                loading="lazy"
               />
             </figure>
             <figure class="dish-card">
-              <img src="assets/2026-04-01.jpg" alt="Plato real de El Comal con colores calidos" />
+              <img src="assets/2026-04-01.jpg" alt="Plato real de El Comal con colores calidos" loading="lazy" />
             </figure>
             <figure class="dish-card">
               <img
                 src="assets/658169932_17942188029172088_6858832126313921003_n.heic.jpeg"
                 alt="Plato fotografiado para la galeria de El Comal"
+                loading="lazy"
               />
             </figure>
             <figure class="dish-card">
               <img
                 src="assets/657601926_17942644560172088_7957316607612590793_n.heic.jpeg"
                 alt="Detalle de plato real de El Comal"
+                loading="lazy"
               />
             </figure>
             <figure class="dish-card">
               <img
                 src="assets/656795663_17942188083172088_545658277981609114_n.heic.jpeg"
                 alt="Cocina de El Comal servida en plato"
+                loading="lazy"
               />
             </figure>
             <figure class="dish-card">
               <img
                 src="assets/657208508_17942187315172088_5417977467779654248_n.heic.jpeg"
                 alt="Plato de El Comal listo para servir"
+                loading="lazy"
               />
             </figure>
           </div>
-          <div class="reel-hint" aria-hidden="true">
-            <span></span>
+          <div class="reel-hint" aria-hidden="true" id="reelHint">
+            <span class="is-active"></span>
             <span></span>
             <span></span>
           </div>
@@ -202,7 +215,7 @@
         </div>
       </section>
 
-      <section class="reviews-section" id="opiniones">
+      <section class="reviews-section fade-in-up" id="opiniones">
         <div class="reviews-heading">
           <div class="reviews-heading-text">
             <p class="section-number" data-i18n="reviews.kicker">Google</p>
@@ -243,7 +256,7 @@
         </div>
       </section>
 
-      <section class="reservation-band" id="reservas">
+      <section class="reservation-band fade-in-up" id="reservas">
         <div>
           <p class="eyebrow" data-i18n="reservations.kicker">Reservas</p>
           <h2 data-i18n="reservations.title">Una mesa, una luz, una noche oaxaquena.</h2>
@@ -254,7 +267,7 @@
         </div>
       </section>
 
-      <section class="contact-section" id="contacto">
+      <section class="contact-section fade-in-up" id="contacto">
         <div class="contact-copy">
           <p class="section-number" data-i18n="contact.kicker">Contacto</p>
           <h2 data-i18n="contact.title">Encuentranos en el centro de Calella.</h2>
@@ -304,5 +317,70 @@
     <script src="i18n/locales/fr.js"></script>
     <script src="i18n/locales/ru.js"></script>
     <script src="i18n/i18n.js"></script>
+    <script>
+      // Intersection Observer for fade-in animations
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.fade-in-up').forEach((elem) => {
+        observer.observe(elem);
+      });
+
+      // Mobile Menu Toggle
+      const mobileToggle = document.querySelector('.mobile-menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if(mobileToggle && navLinks) {
+        mobileToggle.addEventListener('click', () => {
+          const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+          mobileToggle.setAttribute('aria-expanded', !isExpanded);
+          navLinks.classList.toggle('is-open');
+        });
+
+        // Close menu on link click
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            navLinks.classList.remove('is-open');
+          });
+        });
+      }
+
+      // Gallery Scroll Indicator
+      const photoReel = document.getElementById('photoReel');
+      const reelHints = document.querySelectorAll('#reelHint span');
+      if (photoReel && reelHints.length > 0) {
+        photoReel.addEventListener('scroll', () => {
+          const scrollLeft = photoReel.scrollLeft;
+          const maxScroll = photoReel.scrollWidth - photoReel.clientWidth;
+          const scrollPercentage = scrollLeft / maxScroll;
+
+          const activeIndex = Math.min(
+            Math.floor(scrollPercentage * reelHints.length),
+            reelHints.length - 1
+          );
+
+          reelHints.forEach((hint, index) => {
+            if (index === activeIndex) {
+              hint.classList.add('is-active');
+            } else {
+              hint.classList.remove('is-active');
+            }
+          });
+        });
+      }
+    </script>
   </body>
 </html>
