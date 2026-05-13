@@ -352,41 +352,76 @@ h3 {
 .intro-mark {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(16px, 3vw, 32px);
+  gap: 1px;
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--line);
+  margin-top: 24px;
 }
 
 .intro-dish {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
   text-align: center;
+  padding: clamp(24px, 4vw, 38px);
+  background:
+    linear-gradient(145deg, rgba(43, 46, 53, 0.92), rgba(24, 27, 31, 0.94)),
+    var(--charcoal);
+  transition: transform 300ms ease, background 300ms ease;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-dish:hover {
+  transform: translateY(-4px);
+  background:
+    linear-gradient(145deg, rgba(50, 54, 62, 0.95), rgba(24, 27, 31, 0.98)),
+    var(--charcoal);
+  z-index: 1;
 }
 
 .intro-dish img {
-  height: clamp(200px, 22vw, 320px);
+  height: clamp(160px, 18vw, 240px);
   width: auto;
   margin: 0 auto;
-  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.85)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.6)) drop-shadow(0 6px 16px rgba(0, 0, 0, 0.4));
   display: block;
+  transition: transform 300ms ease;
+}
+
+.intro-dish:hover img {
+  transform: scale(1.05);
 }
 
 .intro-dish-label {
   color: var(--cream);
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(14px, 1.6vw, 18px);
+  font-size: clamp(16px, 1.8vw, 20px);
   line-height: 1.3;
   margin: 0;
 }
 
-.intro-band-heading {
+.intro-header {
   text-align: center;
   max-width: 720px;
   margin: 0 auto clamp(28px, 4vw, 48px);
+}
+
+.intro-band-heading {
   color: var(--cream);
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(22px, 3vw, 34px);
-  line-height: 1.3;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.2;
   font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.intro-band-copy {
+  color: rgba(247, 243, 233, 0.76);
+  font-size: clamp(16px, 1.8vw, 18px);
+  line-height: 1.5;
+  margin: 0;
 }
 
 .intro-band p,

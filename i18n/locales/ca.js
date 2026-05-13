@@ -15,9 +15,8 @@
       viewMenu: "Veure menú",
     },
     intro: {
-      mark: "Autèntic. Elegant. Càlid. Arrelat.",
-      copy: "El Comal honra la cuina oaxaquenya amb ingredients honestos, tècnica ancestral i una hospitalitat propera que converteix cada visita en un petit ritual.",
-      heading: "Oaxaca en cada detall. Tortilla artesana, ànima mexicana, mans expertes. Prova el fet per qui millor coneix el sabor de la seva terra.",
+      title: "Oaxaca en cada detall.",
+      copy: "Truita artesana, ànima mexicana, mans expertes. Tasta allò fet per qui millor coneix el sabor de la seva terra.",
     },
     space: {
       kicker: "Espai",

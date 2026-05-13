@@ -15,9 +15,8 @@
       viewMenu: "View menu",
     },
     intro: {
-      mark: "Authentic. Elegant. Warm. Rooted.",
-      copy: "El Comal honors Oaxacan cuisine through honest ingredients, ancestral technique and close hospitality that turns each visit into a small ritual.",
-      heading: "Oaxaca in every detail. Artisan tortilla, Mexican soul, expert hands. Taste what's made by those who know the flavor of their land best.",
+      title: "Oaxaca in every detail.",
+      copy: "Artisan tortilla, Mexican soul, expert hands. Taste what is made by those who know the flavor of their land best.",
     },
     space: {
       kicker: "Space",
