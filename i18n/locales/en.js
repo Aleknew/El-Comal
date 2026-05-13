@@ -135,9 +135,9 @@
       title: "What stays with you after the meal.",
       googleLink: "View on Google",
       cards: {
-        latest: { label: "Google Reviews", copy: "Read the latest verified opinions directly on Google Maps." },
-        share: { label: "Your review", copy: "Share your experience after visiting and help other guests find us." },
-        profile: { label: "Google Maps", copy: "The Google profile keeps public reviews, photos and location information." },
+        review1: { label: "Maria G.", copy: "\"Authentic Mexican food. The tacos al pastor and chilaquiles are incredible. Wonderful service and a very cozy place.\"" },
+        review2: { label: "Carlos R.", copy: "\"Without a doubt the best Mexican restaurant in the area. The flavors transport you straight to Mexico. 100% recommended.\"" },
+        review3: { label: "Laura M.", copy: "\"Excellent service and delicious food. We tried the mole and margaritas, everything spectacular. We will definitely be back.\"" },
       },
     },
     reservations: { kicker: "Reservations", title: "A table, a light, an Oaxacan night.", call: "Call now", write: "Write" },

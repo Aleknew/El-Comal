@@ -163,9 +163,9 @@
       title: "Lo que se recuerda después de la mesa.",
       googleLink: "Ver en Google",
       cards: {
-        latest: { label: "Google Reviews", copy: "Consulta las últimas opiniones verificadas directamente en Google Maps." },
-        share: { label: "Tu opinión", copy: "Comparte tu experiencia después de la visita y ayuda a otros comensales a encontrarnos." },
-        profile: { label: "Google Maps", copy: "El perfil de Google mantiene la información pública de reseñas, fotos y ubicación." },
+        review1: { label: "Maria G.", copy: "\"Comida mexicana auténtica. Los tacos al pastor y los chilaquiles son increíbles. El trato es maravilloso y el local muy acogedor.\"" },
+        review2: { label: "Carlos R.", copy: "\"Sin duda el mejor restaurante mexicano de la zona. Los sabores te transportan directamente a México. Recomendable 100%.\"" },
+        review3: { label: "Laura M.", copy: "\"Excelente servicio y comida deliciosa. Probamos el mole y las margaritas, todo espectacular. Repetiremos seguro.\"" },
       },
     },
     reservations: {

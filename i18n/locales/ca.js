@@ -135,9 +135,9 @@
       title: "El que es recorda després de la taula.",
       googleLink: "Veure a Google",
       cards: {
-        latest: { label: "Google Reviews", copy: "Consulta les últimes opinions verificades directament a Google Maps." },
-        share: { label: "La teva opinió", copy: "Comparteix la teva experiència després de la visita i ajuda altres comensals a trobar-nos." },
-        profile: { label: "Google Maps", copy: "El perfil de Google manté la informació pública de ressenyes, fotos i ubicació." },
+        review1: { label: "Maria G.", copy: "\"Menjar mexicà autèntic. Els tacos al pastor i els chilaquiles són increïbles. El tracte és meravellós i el local molt acollidor.\"" },
+        review2: { label: "Carlos R.", copy: "\"Sens dubte el millor restaurant mexicà de la zona. Els sabors et transporten directament a Mèxic. Recomanable 100%.\"" },
+        review3: { label: "Laura M.", copy: "\"Excel·lent servei i menjar deliciós. Vam provar el mole i les margarites, tot espectacular. Repetirem segur.\"" },
       },
     },
     reservations: { kicker: "Reserves", title: "Una taula, una llum, una nit oaxaquenya.", call: "Trucar ara", write: "Escriure" },

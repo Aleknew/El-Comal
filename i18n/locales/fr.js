@@ -135,9 +135,9 @@
       title: "Ce qui reste après le repas.",
       googleLink: "Voir sur Google",
       cards: {
-        latest: { label: "Google Reviews", copy: "Consultez les derniers avis vérifiés directement sur Google Maps." },
-        share: { label: "Votre avis", copy: "Partagez votre expérience après la visite et aidez d'autres convives à nous trouver." },
-        profile: { label: "Google Maps", copy: "Le profil Google conserve les avis publics, les photos et les informations de localisation." },
+        review1: { label: "Maria G.", copy: "\"Nourriture mexicaine authentique. Les tacos al pastor et les chilaquiles sont incroyables. Un service merveilleux et un endroit très accueillant.\"" },
+        review2: { label: "Carlos R.", copy: "\"Sans aucun doute le meilleur restaurant mexicain de la région. Les saveurs vous transportent directement au Mexique. Recommandé à 100%.\"" },
+        review3: { label: "Laura M.", copy: "\"Excellent service et nourriture délicieuse. Nous avons goûté le mole et les margaritas, tout était spectaculaire. Nous reviendrons à coup sûr.\"" },
       },
     },
     reservations: { kicker: "Réservations", title: "Une table, une lumière, une nuit oaxaquénienne.", call: "Appeler", write: "Écrire" },
