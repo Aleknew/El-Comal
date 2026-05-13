@@ -17,6 +17,11 @@
     intro: {
       title: "Oaxaca in every detail.",
       copy: "Artisan tortilla, Mexican soul, expert hands. Taste what is made by those who know the flavor of their land best.",
+      dishes: {
+        dish1: "Green Chilaquiles with Grilled Beef.",
+        dish2: "Chilaquiles with Black Mole",
+        dish3: "Enchiladas and Tostada de Tinga",
+      },
     },
     space: {
       kicker: "Space",

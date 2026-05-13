@@ -25,6 +25,11 @@
     intro: {
       title: "Oaxaca en cada detalle.",
       copy: "Tortilla artesana, alma mexicana, manos expertas. Prueba lo hecho por quién mejor conoce el sabor de su tierra.",
+      dishes: {
+        dish1: "Chilaquiles verdes con carne asada.",
+        dish2: "Chilaquiles con mole negro",
+        dish3: "Enchiladas y tostada de tinga",
+      },
     },
     space: {
       kicker: "Espacio",

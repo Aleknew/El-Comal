@@ -17,6 +17,11 @@
     intro: {
       title: "Oaxaca en cada detall.",
       copy: "Truita artesana, ànima mexicana, mans expertes. Tasta allò fet per qui millor coneix el sabor de la seva terra.",
+      dishes: {
+        dish1: "Chilaquiles verds amb carn a la brasa.",
+        dish2: "Chilaquiles amb mole negre",
+        dish3: "Enchiladas i tostada de tinga",
+      },
     },
     space: {
       kicker: "Espai",
