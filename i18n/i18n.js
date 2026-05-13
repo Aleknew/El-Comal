@@ -142,8 +142,8 @@
 
     let html = "";
 
-    // For en, fr, ru: show disclaimer header + spanish content (from es locale)
-    if (["en", "fr", "ru"].includes(currentLang)) {
+    // For en, fr, de: show disclaimer header + spanish content (from es locale)
+    if (["en", "fr", "de"].includes(currentLang)) {
       if (hasHeader) {
         html += dictionary.legalModal.header;
       }
