@@ -154,5 +154,39 @@
       tagline: "Cuina ancestral oaxaquenya",
       copy: "Carrer de la Riera, 16, Calella. Obert per dinars, sopars i trobades amb sabor d'origen.",
     },
+    legalBar: {
+      text: "Avís legal i privacitat",
+    },
+    legalModal: {
+      content: `<h2>Avís Legal i Política de Privacitat</h2>
+<p>En compliment de la Llei 34/2002, d'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSI-CE) i del Reglament (UE) 2016/679 (RGPD), es facilita la informació següent.</p>
+
+<h3>1. Dades identificatives del titular</h3>
+<p><strong>Titular:</strong> [NOM DEL RESTAURANT O RAÓ SOCIAL]<br>
+<strong>Domicili:</strong> [ADREÇA COMPLETA, CODI POSTAL, CIUTAT, PROVÍNCIA]<br>
+<strong>NIF/CIF:</strong> [NÚMERO]<br>
+<strong>Correu electrònic:</strong> [EMAIL DE CONTACTE]<br>
+<strong>Telèfon:</strong> [NÚMERO DE TELÈFON]</p>
+
+<h3>2. Objecte del lloc web</h3>
+<p>El present lloc web té caràcter merament informatiu i la seva finalitat és donar a conèixer l'activitat, ubicació i dades de contacte de l'establiment.</p>
+
+<h3>3. Propietat intel·lectual</h3>
+<p>Els continguts d'aquest lloc web, incloent textos, imatges i disseny, són propietat del titular o han estat utilitzats amb autorització. Queda prohibida la seva reproducció total o parcial sense autorització expressa.</p>
+
+<h3>4. Protecció de dades i privacitat</h3>
+<p>Aquest lloc web no disposa de formularis de registre, subscripció ni cap altre mecanisme de recollida de dades personals. No s'utilitzen cookies d'anàlisi, publicitat ni seguiment, ni s'integren serveis de tercers que puguin recopilar dades dels visitants.</p>
+<p>L'únic mitjà de contacte disponible és el botó de WhatsApp, l'ús del qual és completament voluntari. En cas que l'usuari iniciï una conversa a través de WhatsApp, el tractament de les dades facilitades en aquesta comunicació queda subjecte a la política de privacitat de WhatsApp LLC / Meta Platforms Ireland Limited, aliena al titular d'aquest lloc.</p>
+
+<h3>5. Drets dels usuaris</h3>
+<p>Vostè té dret a accedir, rectificar i suprimir les seves dades, així com altres drets reconeguts en el RGPD i en la Llei Orgànica 3/2018 (LOPDGDD). Per exercir-los, pot dirigir-se a: [EMAIL DE CONTACTE]</p>
+<p>Així mateix, té dret a presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (www.aepd.es).</p>
+
+<h3>6. Responsabilitat</h3>
+<p>El titular no es responsabilitza dels possibles danys o perjudicis que poguessin derivar-se d'interferències, interrupcions o desconnexions del sistema de telecomunicacions que produeixin la suspensió o cancel·lació del servei web.</p>
+
+<h3>7. Legislació aplicable i modificacions</h3>
+<p>Les presents condicions es regeixen per la legislació espanyola vigent. El titular es reserva el dret a actualitzar aquest document en qualsevol moment. Es recomana revisar-lo periòdicament.</p>`,
+    },
   };
 })();

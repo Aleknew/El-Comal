@@ -132,6 +132,39 @@
     });
   }
 
+  function renderLegalModal(dictionary) {
+    const body = document.querySelector("[data-legal-body]");
+    if (!body) return;
+
+    const currentLang = document.documentElement.lang;
+    const hasCustomContent = dictionary.legalModal && dictionary.legalModal.content;
+    const hasHeader = dictionary.legalModal && dictionary.legalModal.header;
+
+    let html = "";
+
+    // For en, fr, ru: show disclaimer header + spanish content (from es locale)
+    if (["en", "fr", "ru"].includes(currentLang)) {
+      if (hasHeader) {
+        html += dictionary.legalModal.header;
+      }
+      const esContent = locales.es && locales.es.legalModal && locales.es.legalModal.content;
+      if (esContent) {
+        html += esContent;
+      }
+    } else if (hasCustomContent) {
+      // For ca: use catalan content; for es: use spanish content
+      html += dictionary.legalModal.content;
+    } else {
+      // Fallback to spanish
+      const esContent = locales.es && locales.es.legalModal && locales.es.legalModal.content;
+      if (esContent) {
+        html += esContent;
+      }
+    }
+
+    body.innerHTML = html;
+  }
+
   function applyLanguage(language) {
     const nextLanguage = enabledLanguages.includes(language) && locales[language] ? language : defaultLanguage;
     const dictionary = getDictionary(nextLanguage);
@@ -141,9 +174,41 @@
     setTextContent(dictionary);
     renderLanguageSwitcher(nextLanguage);
     renderMenu(dictionary);
+    renderLegalModal(dictionary);
+  }
+
+  function initLegalModal() {
+    const btn = document.querySelector("[data-legal-btn]");
+    const overlay = document.querySelector("[data-legal-modal]");
+    const closeBtn = document.querySelector("[data-legal-close]");
+    if (!btn || !overlay || !closeBtn) return;
+
+    function openModal() {
+      overlay.classList.add("is-open");
+      overlay.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      overlay.classList.remove("is-open");
+      overlay.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    btn.addEventListener("click", openModal);
+    closeBtn.addEventListener("click", closeModal);
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && overlay.classList.contains("is-open")) {
+        closeModal();
+      }
+    });
   }
 
   document.addEventListener("DOMContentLoaded", () => {
     applyLanguage(getInitialLanguage());
+    initLegalModal();
   });
 })();

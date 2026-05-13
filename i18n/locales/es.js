@@ -187,5 +187,39 @@
       tagline: "Cocina ancestral oaxaqueña",
       copy: "Carrer de la Riera, 16, Calella. Abierto para comidas, cenas y encuentros con sabor de origen.",
     },
+    legalBar: {
+      text: "Aviso legal y privacidad",
+    },
+    legalModal: {
+      content: `<h2>Aviso Legal y Política de Privacidad</h2>
+<p>En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE) y del Reglamento (UE) 2016/679 (RGPD), se facilita la siguiente información.</p>
+
+<h3>1. Datos identificativos del titular</h3>
+<p><strong>Titular:</strong> [NOMBRE DEL RESTAURANTE O RAZÓN SOCIAL]<br>
+<strong>Domicilio:</strong> [DIRECCIÓN COMPLETA, CÓDIGO POSTAL, CIUDAD, PROVINCIA]<br>
+<strong>NIF/CIF:</strong> [NÚMERO]<br>
+<strong>Correo electrónico:</strong> [EMAIL DE CONTACTO]<br>
+<strong>Teléfono:</strong> [NÚMERO DE TELÉFONO]</p>
+
+<h3>2. Objeto del sitio web</h3>
+<p>El presente sitio web tiene carácter meramente informativo y su finalidad es dar a conocer la actividad, ubicación y datos de contacto del establecimiento.</p>
+
+<h3>3. Propiedad intelectual</h3>
+<p>Los contenidos de este sitio web, incluyendo textos, imágenes y diseño, son propiedad del titular o han sido utilizados con autorización. Queda prohibida su reproducción total o parcial sin autorización expresa.</p>
+
+<h3>4. Protección de datos y privacidad</h3>
+<p>Este sitio web no dispone de formularios de registro, suscripción ni ningún otro mecanismo de recogida de datos personales. No se utilizan cookies de análisis, publicidad ni seguimiento, ni se integran servicios de terceros que puedan recopilar datos de los visitantes.</p>
+<p>El único medio de contacto disponible es el botón de WhatsApp, cuyo uso es completamente voluntario. En caso de que el usuario inicie una conversación a través de WhatsApp, el tratamiento de los datos facilitados en dicha comunicación queda sujeto a la política de privacidad de WhatsApp LLC / Meta Platforms Ireland Limited, ajena al titular de este sitio.</p>
+
+<h3>5. Derechos de los usuarios</h3>
+<p>Usted tiene derecho a acceder, rectificar y suprimir sus datos, así como otros derechos reconocidos en el RGPD y en la Ley Orgánica 3/2018 (LOPDGDD). Para ejercerlos, puede dirigirse a: [EMAIL DE CONTACTO]</p>
+<p>Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+
+<h3>6. Responsabilidad</h3>
+<p>El titular no se responsabiliza de los posibles daños o perjuicios que pudieran derivarse de interferencias, interrupciones o desconexiones del sistema de telecomunicaciones que produzcan la suspensión o cancelación del servicio web.</p>
+
+<h3>7. Legislación aplicable y modificaciones</h3>
+<p>Las presentes condiciones se rigen por la legislación española vigente. El titular se reserva el derecho a actualizar este documento en cualquier momento. Se recomienda revisarlo periódicamente.</p>`,
+    },
   };
 })();

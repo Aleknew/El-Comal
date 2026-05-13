@@ -154,5 +154,11 @@
       tagline: "Cuisine ancestrale d'Oaxaca",
       copy: "Carrer de la Riera, 16, Calella. Ouvert pour les déjeuners, dîners et rencontres au goût d'origine.",
     },
+    legalBar: {
+      text: "Mentions légales et confidentialité",
+    },
+    legalModal: {
+      header: "<em>Ces informations sont fournies en espagnol conformément à la loi espagnole.</em>",
+    },
   };
 })();
